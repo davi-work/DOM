@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .item{
+  width: 50px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+}
+.item:hover{
+  background: rgb(94, 94, 94);
+}
+.item:active{
+  background: rgb(119, 104, 104);
+} */
+
+body{
+  transition: .25s
+}
+
+
+.box {
+  width: 100px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px 3px indigo;
+  border-radius: 5px;
+  background: #160e0e;
+  display: grid;
+  place-items: center;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 5%;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px 3px #fff;
+  background: #fff;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.cards {
+  max-width: 1320px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card, .card_2 {
+  max-width: 255px;
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 8px;
+  height: 255px;
+}
+
+.traffic-light{
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  background: black;
+  left: 50%;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+.traffic-light:before{
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 25px;
+  background: grey;
+  bottom: 100%;
+  left: calc(50% - 12.5px);
+}
+.traffic-light-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.traffic-light-item.red {
+  background: rgb(100, 0, 0);
+}
+
+.traffic-light-item.yellow {
+  background: rgb(170, 170, 0);
+}
+
+.traffic-light-item.green {
+  background: rgb(0, 90, 0);
+}
+
+.active {
+  border-radius: 50%;
+}
+
+.traffic-light-item.red.active {
+  box-shadow: 0px 0px 15px rgb(255, 132, 132);
+  background: red;
+}
+
+.traffic-light-item.yellow.active {
+  box-shadow: 0px 0px 15px rgb(255, 255, 50);
+  background: yellow;
+}
+
+.traffic-light-item.green.active {
+  box-shadow: 0 0 15px rgb(69, 240, 69);
+  background: green;
+}
+
+.timer{
+  position: absolute;
+  
+}
