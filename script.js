@@ -132,6 +132,19 @@ console.log(document.body);
 //   })
 // }
 
+let input = document.querySelector('input'), 
+    btn = document.querySelector('#btn');
+
+btn.addEventListener('click', ()=> {
+  btn.innerText = 'Hide'
+  if(btn.innerText = 'Hide'){
+    btn.innerText = 'Show'
+    input.setAttribute('type', 'text')
+  } else{
+    btn.innerText = 'Hide'
+    input.setAttribute('type', 'password')
+  }
+})
 
 
 
