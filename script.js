@@ -183,13 +183,15 @@ function changeClassActive() {
   }
   
   items[activeIndex].classList.remove('active');
-  const nextIndex = (activeIndex + 1) % items.length
-  // console.log(nextIndex);
+  const nextIndex = (activeIndex + 1) % items.length 
+  // console.log(nextIndex); 
   items[nextIndex].classList.add('active') 
 }
 
-setInterval(changeClassActive, 5000);
+setInterval(changeClassActive, 5000); 
 document.querySelector('.traffic-light-item').classList.add('active');
+// это функция в JavaScript, которая используется для выполнения указанной функции или кода через определенные промежутки времени. 
+// Она принимает два аргумента: функцию, которая должна быть выполнена, и интервал времени в миллисекундах между последовательными вызовами этой функции.
 
 
 
