@@ -208,6 +208,54 @@ document.querySelector('.traffic-light-item').classList.add('active');
 
 
 
+// const red    = document.querySelector('.red');
+// const yellow = document.querySelector('.yellow');
+// const green  = document.querySelector('.green');
+
+// const redTimer    = document.querySelector('.red-timer');
+// const yellowTimer = document.querySelector('.yellow-timer');
+// const greenTimer  = document.querySelector('.green-timer');
+
+
+// function trafficLight() {
+//   let redCounter    = 5,
+//       yellowCounter = 3,
+//       greenCounter  = 5;
+  
+//   function upadteLights() {
+//     if(redCounter > 0){
+//       redCounter--;
+//       redTimer.innerText = redCounter
+//       green.classList.remove('active')
+//       red.classList.add('active')
+//       greenTimer.innerText = ''
+//     } else if(yellowCounter > 0) {
+//       yellowCounter-- 
+//       redTimer.innerText = ''
+//       // yellowTimer.innerText = yellowCounter
+//       red.classList.remove('active')
+//       yellow.classList.add('active')
+//     } else if(greenCounter > 0) {
+//       greenCounter--
+//       greenTimer.innerText = greenCounter
+//       yellow.classList.remove('active')
+//       green.classList.add('active')
+//     }
+//     if(redCounter === 0 && yellowCounter === 0 && greenCounter === 0) {
+//       redCounter    = 5,
+//       yellowCounter = 3,
+//       greenCounter  = 5;
+//       red.classList.remove('active')
+//       yellow.classList.remove('active')
+//       green.classList.remove('active')
+//     }
+//   }
+//   setInterval(upadteLights, 1000)
+// }
+
+// trafficLight()
+
+
 
 
 
